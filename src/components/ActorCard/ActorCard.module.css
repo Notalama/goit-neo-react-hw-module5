@@ -1,0 +1,62 @@
+.actorItem {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.actorItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.actorImage {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.actorPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noPhoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #666;
+  font-size: 14px;
+  background-color: #eee;
+}
+
+.actorInfo {
+  padding: 12px;
+}
+
+.actorName {
+  margin: 0 0 6px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.character {
+  margin: 0;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+@media (max-width: 576px) {
+  .actorImage {
+    height: 200px;
+  }
+
+  .actorInfo {
+    padding: 8px;
+  }
+}
